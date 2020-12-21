@@ -6,5 +6,5 @@ RUN rm /var/cache/apk/* && mkdir -p /var/www
 RUN pecl install redis
 
 RUN docker-php-ext-configure intl
-RUN docker-php-ext-install mysqli pdo_mysql intl json
-RUN docker-php-ext-enable intl redis
+RUN docker-php-ext-install mysqli pdo_mysql intl
+RUN docker-php-ext-enable redis
